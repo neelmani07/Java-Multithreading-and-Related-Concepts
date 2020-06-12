@@ -1,1 +1,1 @@
-This repository comprises of basic Java Multithredaing Concepts and code implementations.. 
+This repository comprises of basic Java Multithreading Concepts and code implementations.. 
