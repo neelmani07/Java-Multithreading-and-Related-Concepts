@@ -1,0 +1,35 @@
+visit ->https://www.codejava.net/java-core/concurrency/understanding-atomic-variables-in-java
+for better understanding.
+
+
+This Java Concurrency tutorial helps you understand the concept of Atomic Variables provided by the Java Concurrency API.
+ Look at the,
+ 
+ java.util.concurrent.atomic
+ 
+ 
+ package you will see the following classes:
+
+      AtomicBoolean
+
+      AtomicInteger
+
+      AtomicLong
+
+You can think of these are wrapper of primitive types boolean, integer and long, with the difference: they are designed to be safely used in multi-threaded context.
+
+They are called atomic variables because they provide some operations that cannot be interfered by multiple threads. Here’s to name a few:
+
+incrementAndGet(): Atomically increments by one the current value.
+
+decrementAndGet(): Atomically decrements by one the current value.
+
+ These operations are guaranteed to execute atomically using machine-level instructions on modern processors.
+
+Using atomic variables help avoiding the overhead of synchronization on a single primitive variable, so it is more efficient than using synchronization/locking mechanism.
+
+synchronization/locking comes at the cost of slow performance as it requires resources and thread scheduler to monitor the lock.
+
+Therefore, atomic variable is a good alternative to synchronization on a single primitive type as mentioned earlier, atomic variable uses machine-level instructions to guarantee atomicity.
+
+
